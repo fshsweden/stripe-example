@@ -1,0 +1,20 @@
+<h1>Subscribe</h1>
+
+<!-- form action="/your-server-side-code" method="POST" > -->
+
+<%= form_tag subscription_path, id: "payment-form" do %>
+
+	<script
+	  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+	  data-key="pk_test_4Kx0Tt2mptU08EQi8RHUBVo9"
+	  data-amount="2000"
+	  data-name="FSH Sweden AB"
+	  data-description="2 widgets"
+	  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+	  data-locale="auto"
+	  data-zip-code="true"
+	  data-currency="eur">
+	</script>
+
+<!-- /form > -->
+<% end %>
